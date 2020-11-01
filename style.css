@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+    padding-top:10px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.logo-container > img {
+  object-fit: contain;
+  height: 100px;
+}
+.logo-container > h4 {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.nav_btn {
+  flex: 1;
+  width: 150px;
+}
+.support-btn {
+  width: 150px;
+  height: 40px;
+  margin-left: 100px;
+  background-color:#eb6060;
+  border: none;
+  color:white;
+  cursor: pointer;
+  /* padding: 5px; */
+}
+.support-btn:hover {
+    color:#eb6060;
+  border: 1px solid #eb6060;
+  background-color:white;
+}
+
+.navbar {
+  flex: 2;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: #111;
+}
+.nav-link {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color:#eb6060;
+  }
+
+.hero_section {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.hero_area{
+    flex:1;
+}
+.hero_img{
+    filter: drop-shadow(0px 3px 5px black);
+    animation: drop 1.5s ease-in;
+    flex:1;
+    
+
+}
+
+.hero_area>button{
+    width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  color:#be2020;
+  border:1px solid #be2020;
+  cursor: pointer;
+}
+
+.hero_area>button:hover{
+    background-color:#be2020;
+  border:none;
+  cursor: pointer;
+  color:#fff;
+}
+
+footer{
+    display:flex;
+    margin: auto;
+    width: 90%;
+    background-color: #111;
+    color:white;
+    padding: 50px ;
+}
+
+.footer_section{
+    flex:1;
+    
+}
+.footer_section>p{
+    font-weight: 300;
+}
+.footer-header{
+    font-size: 18px;
+}
+
+.footer_section>ul{
+    list-style: none;
+}
+.footer_section>ul>li>a{
+    text-decoration: none;
+    color:rgb(143, 94, 94);
+    cursor:pointer;
+}
+
+@keyframes drop{
+    0%{
+        opacity:0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px){
+    .nav-container{
+        flex-direction: column;
+
+    }
+    .navbar{
+        width:100%;
+        padding: 5px;
+    }
+    .support-btn {
+        margin:auto;
+    }
+    .hero_section {
+        flex-direction: column;
+
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer_section{
+        padding: 10px;
+        
+    }
+
+}
